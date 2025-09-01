@@ -86,21 +86,21 @@ export default function LoginPage() {
           <div className="line"></div>
           <div className="socials">
             <div className="btn soc_icon">
-              <a href="#">
+              <Link to="/">
                 <img src="images/users/icon-facebook.svg" alt="social icon" />
-              </a>
+              </Link>
             </div>
             
             <div className="btn soc_icon">
-              <a href="#">
+              <Link to="/">
                 <img src="images/users/icon-google.svg" alt="social icon" />
-              </a>
+              </Link>
             </div>
             
             <div className="btn soc_icon">
-              <a href="#">
+              <Link to="/">
                 <img src="images/users/icon-apple.svg" alt="social icon" />
-              </a>
+              </Link>
             </div>
             
           </div>
