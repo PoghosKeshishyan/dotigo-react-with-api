@@ -1,0 +1,18 @@
+<svg width="141" height="141" viewBox="0 0 141 141" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_132_7601)">
+<rect x="20" y="16" width="101" height="101" rx="50.5" fill="#1937BA" shape-rendering="crispEdges"/>
+<path d="M51.8934 51.6867H86.0406C89.1335 51.6867 91.3668 54.5371 90.5183 57.4055L86.806 69.9744C86.2337 71.9046 84.4067 73.2333 82.3283 73.2333H61.7735C59.6929 73.2333 57.8636 71.9024 57.2936 69.9744L51.8934 51.6867ZM51.8934 51.6867L50.2998 46.3M80.6001 86.7C81.493 86.7 82.3493 86.3453 82.9807 85.7139C83.6121 85.0825 83.9668 84.2262 83.9668 83.3333C83.9668 82.4404 83.6121 81.5841 82.9807 80.9527C82.3493 80.3214 81.493 79.9667 80.6001 79.9667C79.7072 79.9667 78.8508 80.3214 78.2194 80.9527C77.5881 81.5841 77.2334 82.4404 77.2334 83.3333C77.2334 84.2262 77.5881 85.0825 78.2194 85.7139C78.8508 86.3453 79.7072 86.7 80.6001 86.7ZM62.6444 86.7C63.5373 86.7 64.3936 86.3453 65.025 85.7139C65.6563 85.0825 66.011 84.2262 66.011 83.3333C66.011 82.4404 65.6563 81.5841 65.025 80.9527C64.3936 80.3214 63.5373 79.9667 62.6444 79.9667C61.7515 79.9667 60.8951 80.3214 60.2637 80.9527C59.6324 81.5841 59.2777 82.4404 59.2777 83.3333C59.2777 84.2262 59.6324 85.0825 60.2637 85.7139C60.8951 86.3453 61.7515 86.7 62.6444 86.7Z" stroke="white" stroke-width="2.25446" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<filter id="filter0_d_132_7601" x="0" y="0" width="141" height="141" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="10"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0980392 0 0 0 0 0.215686 0 0 0 0 0.729412 0 0 0 0.84 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_132_7601"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_132_7601" result="shape"/>
+</filter>
+</defs>
+</svg>

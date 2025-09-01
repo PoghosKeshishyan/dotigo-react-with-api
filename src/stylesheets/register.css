@@ -1,0 +1,353 @@
+.register_page {
+  padding-top: 92px;
+}
+
+.register_page .container {
+  margin: 40px auto;
+  border-radius: 16px;
+  padding: 30px 40px;
+  width: 600px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.register_page .container .title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: -0.01%;
+  text-align: center;
+}
+
+.register_page .container .subtitle {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: #000;
+  padding: 12px 0 18px;
+}
+
+.register_page .container .register_login {
+  border: 4px solid #f2f3fb;
+  background-color: #f2f3fb;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.register_page .container .register_login .reg_log {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #000;
+  width: 49%;
+  border-radius: 8px;
+  padding: 9.5px 0;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.register_page .container .register_login .active {
+  background-color: white;
+  width: 50%;
+  border-radius: 8px;
+  padding: 9.5px 0;
+}
+
+.register_page .container form {
+  background-color: white;
+  width: 100%;
+}
+
+.register_page .container form label {
+  display: block;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #000;
+  padding-bottom: 8px;
+}
+
+.register_page .container form input {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  border: 0.5px solid grey;
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+.register_page .container form #country,
+.register_page .container form #city,
+.register_page .container form #region,
+.register_page .container form #pass_code {
+  width: 95%;
+}
+
+.register_page .container form label span {
+  color: red;
+}
+
+.register_page .container form button {
+  border-radius: 8px;
+  padding: 14px;
+  width: 100%;
+  height: 50px;
+  background: #1937ba;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.register_page .container .register_login {
+  border: 4px solid #f2f3fb;
+  background-color: #f2f3fb;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.register_page .container .register_login .reg_log {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #000;
+  width: 49%;
+  border-radius: 8px;
+  padding: 9.5px 0;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.register_page .container .register_login .active {
+  background-color: white;
+  width: 50%;
+  border-radius: 8px;
+  padding: 9.5px 0;
+}
+
+/* form general */
+.register_page form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* երկու սյուն */
+  gap: 16px; /* դաշտերի միջև տարածք */
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.register_page .form_group {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2; /* default՝ ամբողջ լայնքով */
+}
+
+.register_page .form_group.half {
+  grid-column: span 1; /* կողք-կողքի */
+}
+
+.register_page .form_group label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.register_page .form_group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.register_page .form_group input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.register_page form button {
+  grid-column: span 2;
+  padding: 12px;
+  background: #1937ba;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+.register_page .social_register {
+  width: 332px;
+  margin: 32px auto;
+}
+
+.register_page .social_register h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  color: #6a707c;
+  width: max-content;
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  transform: translateY(8px);
+}
+
+.register_page .social_register .line {
+  border: 1px solid #e8ecf4;
+  margin-bottom: 22px;
+}
+.register_page .social_register .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.register_page .social_register .socials .soc_icon {
+  width: 105px;
+  padding: 14px 0;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #e8ecf4;
+  border-radius: 5px;
+  margin: 0 2px;
+}
+
+.register_page .social_register .socials .soc_icon:hover {
+  box-shadow: 1px 1px 4px #33333357;
+}
+
+
+
+.input_with_icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input_with_icon input {
+  width: 100%;
+}
+
+.toggle_pass {
+  position: absolute;
+  right: 10px;
+  bottom: 25px;
+  cursor: pointer;
+}
+
+.eye_icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.eye_icon:hover {
+  opacity: 1;
+}
+
+
+
+
+
+@media (max-width: 820px) {
+  .register_page .container {
+    width: 80%;
+    padding: 68px;
+  }
+}
+
+@media (max-width: 685px) {
+  .register_page .container {
+    width: 90%;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 540px) {
+  .register_page .container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .register_page .container .register_login .reg_log {
+    width: 100%;
+  }
+
+  .register_page .container .title {
+    font-size: 26px;
+  }
+
+  .register_page .container .subtitle {
+    font-size: 14px;
+    padding-top: 18px;
+    padding-bottom: 26px;
+  }
+
+  .register_page .social_register {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .register_page .container .title {
+    font-size: 20px;
+  }
+
+  .register_page .container .subtitle {
+    font-size: 12px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+
+  .register_page .container .register_login .reg_log {
+    font-size: 14px;
+  }
+  .register_page .container .form_label {
+    font-size: 12px;
+  }
+
+  .register_page .container form input {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .register_page .social_register {
+    margin: 16px auto;
+  }
+  .toggle_pass {
+  bottom: 16px;
+}
+}
+
+@media (max-width: 320px) {
+  .register_page .container .title {
+    font-size: 18px;
+  }
+
+  .register_page .container .subtitle {
+    font-size: 10px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+  }
+}
+
+
+
+
+
+
+
+
+
+

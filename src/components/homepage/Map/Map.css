@@ -1,0 +1,38 @@
+.map-locations {
+    text-align: center;
+}
+
+.map-locations h2 {
+    font-family: var(--font-family);
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.map-locations p {
+    font-family: var(--font-family);
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: rgba(33, 33, 33, 0.6);
+    margin-bottom: 44px;
+}
+
+.map-locations img {
+    width: 100%;
+}
+
+
+/* ============ media queries ============ */
+@media (max-width: 400px) {
+    .map-locations h2 {
+        font-size: 34px;
+        text-align: left;
+        margin-bottom: 16px;
+    }
+
+    .map-locations p {
+        text-align: left;
+    }
+}

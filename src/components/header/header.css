@@ -1,0 +1,229 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 22px 0;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: 0 0px 3px gray;
+}
+
+header .navbar {
+    gap: 40px;
+    position: relative;
+}
+
+header .navbar li {
+    position: relative;
+}
+
+header .navbar a {
+    font-family: var(--font-family);
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #212121;
+    transition: none;
+}
+
+header .navbar a img {
+    margin-left: 10px;
+}
+
+header .navbar .dropdown {
+    border-radius: 8px;
+    padding: 32px 30px;
+    width: 345px;
+    background: #f2f3fb;
+    position: absolute;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    display: none;
+}
+
+header .navbar li.open .dropdown {
+    display: flex;
+    padding: 20px 25px;
+}
+
+header .navbar li.open a img {
+    rotate: 180deg;
+}
+
+header .navbar .dropdown li a {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #000;
+}
+
+header .account-buttons {
+    gap: 12px;
+}
+
+header .account-buttons .btn:first-child {
+    border: 1.20px solid rgba(33, 33, 33, 0.3);
+    border-radius: 8px;
+    padding: 14px 26px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #212121;
+}
+
+header .account-buttons .btn:last-child {
+    border-radius: 8px;
+    padding: 14px 26px;
+    background: #1937ba;
+    font-family: var(--font-family);
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+
+header .change-lang {
+    position: relative;
+    user-select: none;
+    margin-left: 20px;
+}
+
+header .change-lang .selected-lang {
+    gap: 4px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #212121;
+    cursor: pointer;
+    padding: 13px 0;
+}
+
+header .change-lang .lang-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    padding: 12px 16px;
+    width: 91px;
+    background: #f2f3fb;
+}
+
+header .change-lang .flag-arrow.rotate {
+    rotate: 180deg;
+}
+
+header .change-lang .lang-dropdown .lang-option {
+    gap: 8px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+header .change-lang .lang-dropdown .lang-option a {
+    color: #212121;
+}
+
+header .icons {
+    display: none;
+}
+
+header .icons img {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* ============ media queries ============ */
+@media (max-width: 1050px) {
+    header .account-buttons {
+        display: none;
+    }
+
+    header .icons {
+        display: initial;
+        margin-top: 3.5px;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 146%;
+        right: 0;
+        left: 0;
+        background: #fff;
+        padding: 0 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        box-shadow: 0 2px 3px rgb(99, 95, 95);
+        display: initial;
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a {
+        width: 100%;
+        border-radius: .5rem;
+        padding: 1rem;
+        margin: 1rem 0;
+        background: #1936ba1e;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:hover {
+            border-bottom: 0;
+            background: #1937ba;
+            color: #fff;
+        }
+    }
+
+    header .navbar a:hover img {
+        filter: invert(90%);
+    }
+
+    header .navbar li.open .dropdown {
+        gap: 0;
+        background: none;
+    }
+
+    header .navbar li.open .dropdown {
+        position: static;
+        width: 100%;
+        padding: 0;
+    }
+
+    header .navbar .dropdown li a {
+        margin: 0;
+        background: #d4d5dd;
+        margin-bottom: 1rem;
+        font-size: 15px;
+
+        &:hover {
+            background: #1937ba;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    header .logo img {
+        width: 127px;
+    }
+}
+
+@media (max-width: 360px) {
+    header .icons img {
+        margin-left: 10px;
+    }
+}

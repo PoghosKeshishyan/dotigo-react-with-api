@@ -1,0 +1,112 @@
+footer {
+    background: #F2F3FB;
+    padding-top: 88px;
+    padding-bottom: 22px;
+}
+
+footer .row .top-side {
+    display: flex;
+    gap: 104px;
+}
+
+footer .row .top-side .contacts .descr {
+    width: 280px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-family: var(--second-family);
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: rgba(33, 33, 33, 0.6);
+}
+
+footer .row .social-links.bottom {
+    display: none;
+}
+
+footer .row .top-side .contacts .social-links a {
+    margin-right: 16px;
+}
+
+footer .row .top-side .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    width: 100%;
+}
+
+footer .row .top-side .links .box h3 {
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #212121;
+    margin-bottom: 24px;
+}
+
+footer .row .top-side .links .box a {
+    display: block;
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: rgba(33, 33, 33, 0.6);
+}
+
+footer .row .bottom-side {
+    text-align: center;
+    margin-top: 48px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: rgba(33, 33, 33, 0.6);
+}
+
+
+@media (max-width: 1000px) {
+    footer .row .top-side {
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 30px;
+    }
+
+    footer .row .top-side .contacts .descr {
+        margin-bottom: 0;
+    }
+
+    footer .row .top-side .links {
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    footer .row .top-side .links .box {
+        width: 47%;
+    }
+
+    footer .row .social-links.top {
+        display: none;
+    }
+
+    footer .row .social-links.bottom {
+        display: initial;
+    }
+
+    footer .row .social-links.bottom a {
+        margin-right: 16px;
+    }
+
+    footer .row .bottom-side {
+        text-align: left;        
+    }
+}
+
+@media (max-width: 360px) {
+    footer .row .top-side .links .box {
+        width: 100%;
+    }
+}
