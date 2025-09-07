@@ -1,0 +1,100 @@
+.RegisterDomainPage {
+    margin-top: 142px !important;
+    margin-bottom: 88px !important;
+}
+
+.RegisterDomainPage .sub-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: rgba(33, 33, 33, 0.5);
+    margin-bottom: 16px;
+}
+
+.RegisterDomainPage .title {
+    font-family: var(--font-family);
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: #212121;
+    margin-bottom: 40px;
+}
+
+.RegisterDomainPage .content {
+    margin-bottom: 40px;
+}
+
+.RegisterDomainPage .content .search-domain-form {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.RegisterDomainPage .content .search-domain-form input[type=search] {
+    border: 1px solid #1937ba;
+    border-radius: 8px;
+    padding: 14px 24px;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #212121;;
+
+    &::placeholder {
+        opacity: 0.5;
+    }
+
+    &::-webkit-search-cancel-button {
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+}
+
+.RegisterDomainPage .content .search-domain-form input[type=submit] {
+    border-radius: 8px;
+    padding: 14px 26px;
+    background: #1937ba;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #fff;
+}
+
+.RegisterDomainPage .no-domain-message {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-style: italic;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 16px 24px;
+}
+
+@media (max-width: 500px) {
+    .RegisterDomainPage .sub-title {
+        font-size: 12px;
+    }
+
+    .RegisterDomainPage .title {
+        font-size: 34px;
+        margin-bottom: 24px;
+    }
+
+    .RegisterDomainPage .content {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .RegisterDomainPage .content .search-domain-form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

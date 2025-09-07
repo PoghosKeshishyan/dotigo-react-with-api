@@ -1,0 +1,84 @@
+{
+    "register_domain_page": {
+        "id": 1,
+        "lang": "multi",
+        "title": {
+            "en": "Register a domain",
+            "ru": "Зарегистрировать домен",
+            "am": "Գրանցել դոմեյն"
+        },
+        "sub_title": {
+            "en": "Domains",
+            "ru": "Домены",
+            "am": "Դոմեյններ"
+        },
+        "btn_text": {
+            "en": "Check Domain",
+            "ru": "Проверить домен",
+            "am": "Ստուգեք տիրույթը"
+        },
+        "no_domain_messages": {
+            "en": "No domain found with this name. Please try another one.",
+            "ru": "Домен с таким именем не найден. Попробуйте другой вариант.",
+            "am": "Այս անունով դոմեն չի գտնվել։ Խնդրում ենք փորձել մեկ այլ անուն։"
+        }
+    },
+    "domains": [
+        {
+            "id": 1,
+            "title": "domain.com",
+            "price": "$400",
+            "old_price": "$400",
+            "is_active": true
+        },
+        {
+            "id": 2,
+            "title": "domain.com",
+            "price": "$300",
+            "old_price": "$350",
+            "is_active": true
+        },
+        {
+            "id": 3,
+            "title": "domain.com",
+            "price": "$300",
+            "old_price": "$350",
+            "is_active": true
+        },
+        {
+            "id": 3,
+            "title": "domain.ru",
+            "price": "$500",
+            "old_price": "$800",
+            "is_active": true
+        },
+        {
+            "id": 4,
+            "title": "domain.ru",
+            "price": "$600",
+            "old_price": "$800",
+            "is_active": true
+        },
+        {
+            "id": 5,
+            "title": "domain.net",
+            "price": "$800",
+            "old_price": "$122",
+            "is_active": true
+        },
+        {
+            "id": 6,
+            "title": "domain.net",
+            "price": "$800",
+            "old_price": "$811",
+            "is_active": true
+        },
+        {
+            "id": 7,
+            "title": "domain.am",
+            "price": "$800",
+            "old_price": "$665",
+            "is_active": true
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+.domain-list {
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.domain-list .domain-item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 16px 24px;
+
+    &:last-child {
+        border: none;
+    }
+}
+
+.domain-list .domain-item .domain-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+}
+
+.domain-list .domain-item .buy {
+    gap: 32px;
+}
+
+.domain-list .domain-item .buy .price-box .old-price {
+    font-family: var(--font-family);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-decoration: line-through;
+    opacity: 0.5;
+    margin-right: 8px;
+}
+
+.domain-list .domain-item .buy .price-box .price {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+}
+
+@media (max-width: 500px) {
+    .domain-list .domain-item .buy {
+        gap: 14px;
+    }
+
+    .domain-list .domain-item .domain-title,
+    .domain-list .domain-item .buy .price-box .price {
+
+        font-size: 16px;
+    }
+
+    .domain-list .domain-item .buy .price-box .old-price {
+        font-size: 14px;
+    }
+}

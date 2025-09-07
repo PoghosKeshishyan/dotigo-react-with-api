@@ -1,3 +1,9 @@
+/* live chat button */
+#tawkchat-container .tawk-button-circle,
+#tawkchat-container .tawk-button-flat {
+    display: none !important;
+}
+
 .HelpCenter .general {
     position: fixed;
     bottom: 26px;

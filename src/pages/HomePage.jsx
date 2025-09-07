@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getHomePageData } from "../api/home-page";
 import { getHostingData } from "../api/global";
+import Loading from "../components/loading";
 import Intro from '../components/homepage/Intro/';
 import Services from "../components/homepage/Services/";
 import Map from "../components/homepage/Map/";
@@ -10,6 +11,7 @@ import RegisterBanner from "../components/homepage/RegisterBanner/";
 import HelpCenter from '../components/homepage/HelpCenter/';
 
 export default function HomePage() {
+    const [loading, setLoading] = useState(true);
     const [introData, setIntroData] = useState(null);
     const [servicesData, setServicesData] = useState(null);
     const [mapData, setMapData] = useState(null);
@@ -31,6 +33,7 @@ export default function HomePage() {
             setQuestionData(data.question);
             setRegisterBannerData(data.registerBanner);
             setHelpCenterData(data.helpCenter);
+            setLoading(false);
         };
 
         loadingData();
@@ -44,6 +47,10 @@ export default function HomePage() {
 
         loadingData();
     }, [billingType]);
+
+    if (loading) {
+        return <Loading />;
+    }
 
     return (
         <div className="HomePage">

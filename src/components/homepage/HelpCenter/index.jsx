@@ -26,8 +26,8 @@ export default function HelpCenter({ helpCenterData }) {
   }, [show]);
 
   const openChat = () => {
-    if (window.smartsupp) {
-      window.smartsupp("chat:open");
+    if (window.Tawk_API && window.Tawk_API.maximize) {
+      window.Tawk_API.maximize();
       setShow(false);
     }
   };

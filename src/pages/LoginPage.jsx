@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getLoginData } from "../api/login-page";
+import Loading from "../components/loading";
 import "../stylesheets/login.css";
 
 export default function LoginPage() {
+  const [loading, setLoading] = useState(true);
   const [loginData, setLoginData] = useState(null);
 
   const [formData, setFormData] = useState({
@@ -16,6 +18,7 @@ export default function LoginPage() {
       try {
         const data = await getLoginData();
         setLoginData(data);
+        setLoading(false);
       } catch (err) {
         console.error(err);
       }
@@ -33,6 +36,10 @@ export default function LoginPage() {
     console.log(formData);
 
   };
+
+  if (loading) {
+    return <Loading />
+  }
 
   return loginData && (
     <div className="login_page wrapper">

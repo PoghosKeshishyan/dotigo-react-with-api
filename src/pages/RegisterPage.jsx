@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getRegisterData } from "../api/register-page";
+import Loading from "../components/loading";
 import "../stylesheets/register.css";
 
 export default function RegisterPage() {
+  const [loading, setLoading] = useState(true);
   const [registerData, setRegisterData] = useState(null);
   const [formData, setFormData] = useState({});
   const [showPassword, setShowPassword] = useState(false);
@@ -13,6 +15,7 @@ export default function RegisterPage() {
       try {
         const data = await getRegisterData();
         setRegisterData(data[0]);
+        setLoading(false);
       } catch (error) {
         console.log(error);
       }
@@ -29,6 +32,10 @@ export default function RegisterPage() {
     e.preventDefault();
     alert(registerData.confirm_password_message);
   };
+
+  if (loading) {
+    return <Loading />;
+  }
 
   return (
     registerData && (
@@ -55,8 +62,8 @@ export default function RegisterPage() {
                 className={`form_group ${["country", "city", "region", "post_code"].includes(
                   field.name
                 )
-                    ? "half"
-                    : ""
+                  ? "half"
+                  : ""
                   }`}
               >
                 <label htmlFor={field.name}>

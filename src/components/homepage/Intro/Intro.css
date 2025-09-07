@@ -75,28 +75,6 @@
     margin-left: 16px;
 }
 
-.intro .row .top-level-domains {
-    margin-top: 10px;
-    gap: 12px;
-}
-
-.intro .row .top-level-domains p {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 140%;
-    letter-spacing: 0.01em;
-    color: #212121;
-}
-
-.intro .row .top-level-domains .circle {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #1937ba;
-}
-
-
 /* ============ media queries ============ */
 @media (max-width: 1260px) {
     .services .box-container {

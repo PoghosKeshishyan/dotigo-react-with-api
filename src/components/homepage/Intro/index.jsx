@@ -1,32 +1,38 @@
-import { Fragment } from 'react/jsx-runtime';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import TopLevelDomains from '../../top-level-domains';
 import './Intro.css';
 
 export default function Intro({ introData }) {
+    const [input, setInput] = useState('');
+    const navigate = useNavigate();
+
+    const onChangeInput = (event) => {
+        setInput(event.target.value);
+    };
+
+    const onSubmit = (event) => {
+        event.preventDefault();
+        sessionStorage.setItem('searched-domain', input);
+        navigate('/domains-register');
+    };
+
     return (
-        <div className="intro" style={{backgroundImage: `url(${introData.intro.image})`}}>
+        <div className="intro" style={{backgroundImage: `url(${introData.image})`}}>
             <div className="wrapper">
                 <div className="row flex-center">
                     <div className="title">
-                        <h1>{introData.intro.title}</h1>
-                        <p>{introData.intro.descr}</p>
+                        <h1>{introData.title}</h1>
+                        <p>{introData.descr}</p>
                     </div>
 
                     <div className="search">
-                        <form>
-                            <input type="search" placeholder={introData.intro.placeholder} />
-                            <input type="submit" value={introData.intro.btn_text} className="btn" />
+                        <form onSubmit={onSubmit}>
+                            <input type="search" placeholder={introData.placeholder} value={input} onChange={onChangeInput} required />
+                            <input type="submit" value={introData.btn_text} className="btn" />
                         </form>
 
-                        <div className="top-level-domains flex-center">
-                            {
-                                introData.topLevelDomains.map((elem, index, arr) => (
-                                    <Fragment key={elem.id}>
-                                        <p>{elem.label}</p>
-                                        {index !== arr.length-1 && <div className="circle"></div>}
-                                    </Fragment>
-                                ))
-                            }
-                        </div>
+                        <TopLevelDomains />
                     </div>
                 </div>
             </div>

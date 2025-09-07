@@ -7,6 +7,7 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from './pages/RegisterPage';
 import Footer from "./components/footer";
 import axios from "./axios";
+import RegisterDomainPage from "./pages/RegisterDomainPage";
 
 export default function App() {
   const [headerData, setHeaderData] = useState(null);
@@ -34,6 +35,7 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/domains-register" element={<RegisterDomainPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
       </Routes>
