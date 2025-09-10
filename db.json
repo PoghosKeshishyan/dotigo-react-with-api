@@ -1,5 +1,5 @@
 {
-    "register_domain_page": {
+    "domain_page": {
         "id": 1,
         "lang": "multi",
         "title": {
@@ -79,6 +79,316 @@
             "price": "$800",
             "old_price": "$665",
             "is_active": true
+        }
+    ],
+    "hosting_page_heading": [
+        {
+            "id": 1,
+            "lang": "en",
+            "title": "Virtual hosting for website",
+            "subtitle": "We are a leading web solutions services provider",
+            "plan_billing_option": "Bill Monthly / Bill Annually"
+        },
+        {
+            "id": 2,
+            "lang": "ru",
+            "title": "Виртуальный хостинг для сайта",
+            "subtitle": "Мы — ведущий поставщик веб-услуг и решений",
+            "plan_billing_option": "Оплата ежемесячно / ежегодно"
+        },
+        {
+            "id": 3,
+            "lang": "am",
+            "title": "Վիրտուալ հոսթինգ կայքի համար",
+            "subtitle": "Մենք առաջատար վեբ լուծումների և ծառայությունների մատակարար ենք",
+            "plan_billing_option": "Վճարել ամսական / տարեկան"
+        }
+    ],
+    "hosting_page_question_list_heading": {
+        "id": 1,
+        "lang": "multi",
+        "title": {
+            "en": "Have a question? Look here...",
+            "ru": "Есть вопрос? Посмотрите здесь...",
+            "am": "Հարց ունե՞ք։ Նայեք այստեղ..."
+        }
+    },
+    "hosting_page_question_list": [
+        {
+            "id": "general",
+            "lang": "en",
+            "title": "GENERAL",
+            "items": [
+                {
+                    "question": "What is web hosting ?",
+                    "answer": "Web hosting is a data storage service so that a website can be accessed online. This website data is stored in a storage space called a web hosting server which is always active 24 hours a day. The quality of web hosting services can determine the success of your business and all your website activities. Without a quality web hosting service, a website may not be accessed properly. Therefore, always use the best web hosting service for your website"
+                },
+                {
+                    "question": "Why should I use Hostingly web hosting ?",
+                    "answer": "Hostingly provides fast, secure, and user-friendly hosting with 24/7 support, free SSL, and guaranteed uptime for your website’s success."
+                },
+                {
+                    "question": "If I already have a website, can I transfer my web hosting to Hostingly ?",
+                    "answer": "Yes, you can transfer your website easily to Hostingly with our free migration service and zero downtime during the process."
+                },
+                {
+                    "question": "Will all hosting purchases get a free domain?",
+                    "answer": "Most of our hosting plans include a free domain name for the first year to help you get started without extra costs."
+                }
+            ]
+        },
+        {
+            "id": "service",
+            "lang": "en",
+            "title": "SERVICE",
+            "items": [
+                {
+                    "question": "What services do you provide?",
+                    "answer": "We offer reliable web hosting, domain name registration, custom email hosting, website backups, and expert 24/7 technical support."
+                },
+                {
+                    "question": "Do you provide website migration?",
+                    "answer": "Yes, we offer free website migration services to make your transition to our servers seamless and stress-free."
+                },
+                {
+                    "question": "Is email hosting included?",
+                    "answer": "Yes, most of our hosting plans include free professional email hosting with spam protection and easy integration."
+                },
+                {
+                    "question": "Do you offer backup solutions?",
+                    "answer": "We provide daily automated backups to ensure your website data is always secure and can be restored easily if needed."
+                }
+            ]
+        },
+        {
+            "id": "billing",
+            "lang": "en",
+            "title": "BILLING",
+            "items": [
+                {
+                    "question": "How is the payment made?",
+                    "answer": "You can make payments using credit or debit cards, PayPal, or secure bank transfers through our encrypted billing system."
+                },
+                {
+                    "question": "Do you offer any money-back guarantee?",
+                    "answer": "Yes, we offer a 30-day money-back guarantee if you’re not satisfied with our services for any reason."
+                },
+                {
+                    "question": "Can I change my plan later?",
+                    "answer": "Yes, you can upgrade or downgrade your hosting plan at any time through your control panel without losing any data."
+                },
+                {
+                    "question": "Will I receive invoices automatically?",
+                    "answer": "Yes, all invoices and billing statements will be emailed to you automatically and stored in your account for reference."
+                }
+            ]
+        },
+        {
+            "id": "safety",
+            "lang": "en",
+            "title": "SAFETY",
+            "items": [
+                {
+                    "question": "What security measures do you take?",
+                    "answer": "All data is encrypted using SSL technology, our servers are monitored around the clock, and we implement firewalls and regular security updates to protect your information."
+                },
+                {
+                    "question": "Do you provide SSL certificates?",
+                    "answer": "Yes, we provide free SSL certificates with all our hosting plans to ensure your website is secure and trusted by visitors."
+                },
+                {
+                    "question": "Is DDoS protection included?",
+                    "answer": "Yes, we include advanced DDoS protection on all our servers to guard against malicious traffic and keep your site online."
+                },
+                {
+                    "question": "How do you handle data privacy?",
+                    "answer": "We strictly follow data privacy laws and ensure all user information is stored securely and never shared without consent."
+                }
+            ]
+        },
+        {
+            "id": "general",
+            "lang": "ru",
+            "title": "ОБЩИЕ ВОПРОСЫ",
+            "items": [
+                {
+                    "question": "Что такое веб-хостинг?",
+                    "answer": "Веб-хостинг — это услуга хранения данных, позволяющая вашему сайту быть доступным в интернете. Данные сайта хранятся на сервере, который работает круглосуточно. Качество хостинга влияет на успех вашего бизнеса и работу сайта. Без надежного хостинга сайт может работать некорректно, поэтому важно выбирать лучший сервис."
+                },
+                {
+                    "question": "Почему стоит выбрать Hostingly?",
+                    "answer": "Hostingly предлагает быстрый, безопасный и удобный хостинг с круглосуточной поддержкой, бесплатным SSL и гарантией uptime для вашего сайта."
+                },
+                {
+                    "question": "Могу ли я перенести свой сайт на Hostingly?",
+                    "answer": "Да, мы бесплатно перенесем ваш сайт без простоев и сложных настроек."
+                },
+                {
+                    "question": "Домен в подарок при покупке хостинга?",
+                    "answer": "Да, большинство тарифов включают бесплатный домен на первый год."
+                }
+            ]
+        },
+        {
+            "id": "service",
+            "lang": "ru",
+            "title": "УСЛУГИ",
+            "items": [
+                {
+                    "question": "Какие услуги вы предоставляете?",
+                    "answer": "Мы предлагаем хостинг, регистрацию доменов, почту, резервное копирование и техническую поддержку 24/7."
+                },
+                {
+                    "question": "Есть ли услуга переноса сайта?",
+                    "answer": "Да, мы бесплатно перенесем ваш сайт на наши серверы."
+                },
+                {
+                    "question": "Почта входит в хостинг?",
+                    "answer": "Да, в большинстве тарифов есть бесплатная почта с защитой от спама."
+                },
+                {
+                    "question": "Есть ли резервные копии?",
+                    "answer": "Да, мы делаем автоматические бэкапы ежедневно."
+                }
+            ]
+        },
+        {
+            "id": "billing",
+            "lang": "ru",
+            "title": "ОПЛАТА",
+            "items": [
+                {
+                    "question": "Как оплатить услуги?",
+                    "answer": "Оплата картами, PayPal или банковским переводом через защищенную систему."
+                },
+                {
+                    "question": "Есть ли гарантия возврата денег?",
+                    "answer": "Да, 30-дневная гарантия возврата средств."
+                },
+                {
+                    "question": "Можно ли сменить тариф позже?",
+                    "answer": "Да, вы можете изменить тариф в любое время без потери данных."
+                },
+                {
+                    "question": "Присылаете ли вы счета автоматически?",
+                    "answer": "Да, счета приходят на email и хранятся в вашем аккаунте."
+                }
+            ]
+        },
+        {
+            "id": "safety",
+            "lang": "ru",
+            "title": "БЕЗОПАСНОСТЬ",
+            "items": [
+                {
+                    "question": "Какие меры безопасности вы используете?",
+                    "answer": "SSL-шифрование, круглосуточный мониторинг, фаерволы и регулярные обновления."
+                },
+                {
+                    "question": "Включен ли SSL-сертификат?",
+                    "answer": "Да, бесплатный SSL есть во всех тарифах."
+                },
+                {
+                    "question": "Защита от DDoS-атак?",
+                    "answer": "Да, все серверы защищены от DDoS."
+                },
+                {
+                    "question": "Как обеспечивается конфиденциальность?",
+                    "answer": "Мы соблюдаем законы о защите данных и не передаем информацию третьим лицам."
+                }
+            ]
+        },
+        {
+            "id": "general",
+            "lang": "am",
+            "title": "ԸՆԴՀԱՆՈՒՐ ՀԱՐՑԵՐ",
+            "items": [
+                {
+                    "question": "Ի՞նչ է վեբ հոսթինգը:",
+                    "answer": "Վեբ հոսթինգը տվյալների պահպանման ծառայություն է, որը թույլ է տալիս ձեր կայքը լինել առցանց: Տվյալները պահվում են սերվերում, որը աշխատում է 24/7: Հոսթինգի որակը ազդում է ձեր բիզնեսի հաջողության վրա:"
+                },
+                {
+                    "question": "Ինչո՞ւ ընտրել Hostingly:",
+                    "answer": "Hostingly-ն առաջարկում է արագ, անվտանգ և հարմար հոսթինգ՝ 24/7 աջակցությամբ, անվճար SSL և uptime երաշխիք:"
+                },
+                {
+                    "question": "Կարո՞ղ եմ իմ կայքը տեղափոխել Hostingly:",
+                    "answer": "Այո, մենք անվճար կտեղափոխենք ձեր կայքը առանց դադարի:"
+                },
+                {
+                    "question": "Անվճար դոմե՞ն հոսթինգ գնելիս:",
+                    "answer": "Այո, մեծամասնություն տարօրինակների ներառում է անվճար դոմեն առաջին տարվա համար:"
+                }
+            ]
+        },
+        {
+            "id": "service",
+            "lang": "am",
+            "title": "ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ",
+            "items": [
+                {
+                    "question": "Ի՞նչ ծառայություններ եք առաջարկում:",
+                    "answer": "Մենք առաջարկում ենք հոսթինգ, դոմենների գրանցում, էլ. փոստ, պահուստավորում և տեխնիկական աջակցություն 24/7:"
+                },
+                {
+                    "question": "Կա՞ կայքի տեղափոխման ծառայություն:",
+                    "answer": "Այո, մենք առաջարկում ենք անվճար տեղափոխում:"
+                },
+                {
+                    "question": "Էլ. փոստը ներառվու՞մ է հոսթինգում:",
+                    "answer": "Այո, մեծամասնություն տարօրինակների ներառում է անվճար էլ. փոստ:"
+                },
+                {
+                    "question": "Կա՞ պահուստավորում:",
+                    "answer": "Այո, մենք ամեն օր պահուստավորում ենք տվյալները:"
+                }
+            ]
+        },
+        {
+            "id": "billing",
+            "lang": "am",
+            "title": "ՎՃԱՐՈՒՄ",
+            "items": [
+                {
+                    "question": "Ինչպե՞ս կարող եմ վճարել:",
+                    "answer": "Վճարեք քարտերով, PayPal-ով կամ բանկային փոխանցմամբ:"
+                },
+                {
+                    "question": "Կա՞ գումարի վերադարձի երաշխիք:",
+                    "answer": "Այո, 30-օրյա երաշխիք:"
+                },
+                {
+                    "question": "Կարո՞ղ եմ փոխել տարօրինակը հետագայում:",
+                    "answer": "Այո, կարող եք փոխել առանց տվյալների կորստի:"
+                },
+                {
+                    "question": "Հաշիվ-ապրանքագրերը ինքնաբա՞յր կուղարկվեն:",
+                    "answer": "Այո, հաշիվները կուղարկվեն էլ. փոստով և կպահվեն ձեր հաշվում:"
+                }
+            ]
+        },
+        {
+            "id": "safety",
+            "lang": "am",
+            "title": "ԱՆՎՏԱՆԳՈՒԹՅՈՒՆ",
+            "items": [
+                {
+                    "question": "Ի՞նչ անվտանգության միջոցներ եք կիրառում:",
+                    "answer": "SSL-գաղտնագրում, 24/7 մոնիտորինգ, firewall և թարմացումներ:"
+                },
+                {
+                    "question": "SSL-վկայականը ներառվու՞մ է:",
+                    "answer": "Այո, բոլոր տարօրինակներում անվճար SSL է:"
+                },
+                {
+                    "question": "DDoS-պաշտպանությու՞ն կա:",
+                    "answer": "Այո, բոլոր սերվերները պաշտպանված են DDoS-ից:"
+                },
+                {
+                    "question": "Ինչպե՞ս է ապահովվում գաղտնիությունը:",
+                    "answer": "Մենք պահպանում ենք տվյալների պաշտպանության օրենքները:"
+                }
+            ]
         }
     ]
 }

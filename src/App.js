@@ -3,11 +3,12 @@ import { Route, Routes } from "react-router-dom";
 import { DISPLAY_LANG } from './config';
 import Header from "./components/header";
 import HomePage from "./pages/HomePage";
+import DomainPage from "./pages/DomainPage";
+import HostingPage from "./pages/HostingPage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from './pages/RegisterPage';
 import Footer from "./components/footer";
 import axios from "./axios";
-import RegisterDomainPage from "./pages/RegisterDomainPage";
 
 export default function App() {
   const [headerData, setHeaderData] = useState(null);
@@ -35,7 +36,8 @@ export default function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/domains-register" element={<RegisterDomainPage />} />
+        <Route path="/domain" element={<DomainPage />} />
+        <Route path="/hosting" element={<HostingPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
       </Routes>

@@ -37,6 +37,8 @@ export default function HomePage() {
         };
 
         loadingData();
+        sessionStorage.removeItem('searched-domain');
+        window.scrollTo(0, 0);
     }, []);
 
     useEffect(() => {
